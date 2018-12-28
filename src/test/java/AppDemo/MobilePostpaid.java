@@ -26,7 +26,7 @@ public class MobilePostpaid extends base{
 		AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 	    driver.findElementByXPath("//android.widget.Button[@text='ALLOW']").click();
 	    driver.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-	    //driver.findElementById("net.one97.paytm:id/edit_username").sendKeys("9168682671");
+	    driver.findElementById("net.one97.paytm:id/edit_username").sendKeys("9168682671"); // changes this
 	    //driver.findElementById("net.one97.paytm:id/edit_password").sendKeys("dhruba121");
 	    driver.findElementsByClassName("android.widget.EditText").get(0).sendKeys("9168682671");
 	    driver.findElementsByClassName("android.widget.EditText").get(1).sendKeys("dhruba121");
